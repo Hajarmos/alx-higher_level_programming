@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-add = __import__('10-add').add
+remove_char_at = __import__('101-remove_char_at').remove_char_at
 
-print(add(1, 2))
-print(add(98, 0))
-print(add(100, -2))
-
+print(remove_char_at("Best School", 3))
+print(remove_char_at("Chicago", 2))
+print(remove_char_at("C is fun!", 0))
+print(remove_char_at("School", 10))
+print(remove_char_at("Python", -2))
