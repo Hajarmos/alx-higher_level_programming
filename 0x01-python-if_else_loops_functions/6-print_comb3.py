@@ -5,4 +5,3 @@ for i in range(0, 9):
             print('{}{}'.format(i, j), end=', ')
         else:
             print('89')
-print()
