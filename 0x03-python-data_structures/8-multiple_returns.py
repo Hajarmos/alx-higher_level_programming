@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 def multiple_returns(sentence):
-    if sentence is None:
-        sentence[0] = None
-    return (len(sentence), sentence[0])
+    if sentence == "":
+        fc = None
+    else:
+        fc = sentence[:1]
+    return (len(sentence), fc)
