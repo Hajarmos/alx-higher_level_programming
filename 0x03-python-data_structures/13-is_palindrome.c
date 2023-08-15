@@ -13,7 +13,7 @@ int is_palindrome(listint_t **head)
 	listint_t *temp = *head, *temp_t;
 	unsigned int len = 0, lent, lentt;
 
-	if (!head)
+	if (!temp || !temp->next)
 		return (1);
 	while (temp)
 	{
