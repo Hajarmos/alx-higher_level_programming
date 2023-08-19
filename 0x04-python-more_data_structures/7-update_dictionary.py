@@ -4,5 +4,4 @@ def update_dictionary(a_dictionary, key, value):
         if i == key:
             a_dictionary[key] = value
             return
-    a_dictionary = a_dictionary + a_dictionary.keys(key)
     a_dictionary[key] = value
