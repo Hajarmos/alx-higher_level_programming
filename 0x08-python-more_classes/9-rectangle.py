@@ -60,6 +60,7 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return 0
         return (self.__width * 2) + (self.__height * 2)
+
     def __str__(self):
         """ print the rectangle with the character #"""
 
@@ -76,14 +77,14 @@ class Rectangle:
         """return a string representation of the rectangle
         to be able to recreate a new instance by using eval()
         """
-        return "Rectangle(" + str(self.__width) + ", " + str(self.__height) + ")"
+        return ("Rectangle(" + str(self.__width)
+                + ", " + str(self.__height) + ")")
 
     def __del__(self):
         """when an instance of Rectangle is deleted"""
         Rectangle.number_of_instances -= 1
         print("Bye rectangle...")
 
-    
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
         """ returns the biggest rectangle based on the area
