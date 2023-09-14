@@ -34,4 +34,5 @@ class Student:
         arg:
             json: dictionary
         """
-        self.__dict__ = json
+        if json:
+            self.__dict__ = json
