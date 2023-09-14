@@ -10,12 +10,12 @@ def append_after(filename="", search_string="", new_string=""):
         search_string: line befor
         new_string: line to inserte
     """
-    with open(filename, "r+") as f:
+    with open(filename, 'r') as fi:
+        rf = fi.readlines()
+    with open(filename, 'w') as f:
         st = ""
-        for line in f.readlines():
+        for line in rf:
             st += line
             if search_string in line:
                 st += new_string
-        with open(filename, 'w') as fi:
-            pass
         f.write(st)
