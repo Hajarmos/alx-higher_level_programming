@@ -11,7 +11,6 @@ try:
     con = load_from_json_file(filen)
 except:
     con = []
-
 for i in range(1, len(sys.argv)):
     con.append(sys.argv[i])
 
